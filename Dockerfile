@@ -4,11 +4,11 @@ FROM nginx:1.25.3-alpine
 
 #Port to expose
 EXPOSE 80
-ENV MyName="Garfield in a hoodie"
+ENV MyName="Garfield"
 WORKDIR /app
 #working path for application inside container
 
-COPY src/ /usr/share/nginx/html
+COPY src/html/ /usr/share/nginx/html
 #copy the files for html from our working directory to the  direcotry that nginx will use
 
 
